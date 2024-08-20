@@ -31,6 +31,10 @@ A entrada de valores deve seguir o padrão abaixo:
 | Hexadecimal | Não | h | 109FEh | Letras devem ser maiúsculas|
 | Octal | Não | o | 107o | O dígito deve conter valores entre 0 e 7  |
 
+Digitei um valor errado com a base errada. Vou quebrar a execução do código?
+
+> Definitivamente não. O código utiliza um validador de expressões regulares (regex), o qual aceita somente valores dentro do padrão determinado por tipo de base.
+
 ### Exemplos de Valores de Entrada
 
 | Sinal | Valor | Sufixo | Descrição |
@@ -47,14 +51,14 @@ A entrada de valores deve seguir o padrão abaixo:
 
 As funções do tipo **'MAIN'**, devem ser reutilizáveis por todos os outros métodos de conversão.
 
-| Tipo | Origem | Destino| Expressão |
-|------|-----|----|---|
-| MAIN | Decimal | Binário |  = valor [ i ] % 2|
-| MAIN | Decimal | Octal |  = valor [ i ] % 8 |
-| MAIN | Decimal | Hexadecimal |  = valor [ i ] % 16 |
-| MAIN | Binário | Decimal | = valor [ i ] * 2^[ i ] |
-| MAIN | Hexadecimal | Decimal | = valor [ i ] * 16^[ i ] |
-| MAIN | Octal | Decimal | = valor [ i ] * 8^[ i ] |
+| Tipo | Origem | Destino| Expressão | Método |
+|------|-----|----|---|----|
+| MAIN | Decimal | Binário |  = valor [ i ] % 2| 1 |
+| MAIN | Decimal | Octal |  = valor [ i ] % 8 | 1 |
+| MAIN | Decimal | Hexadecimal |  = valor [ i ] % 16 | 1 |
+| MAIN | Binário | Decimal | = valor [ i ] * 2^[ i ] | 2 |
+| MAIN | Hexadecimal | Decimal | = valor [ i ] * 16^[ i ] | 2 |
+| MAIN | Octal | Decimal | = valor [ i ] * 8^[ i ] | 2 |
 
 Sendo definido que, a conversão é feita em 2 (duas) etapas:
 
