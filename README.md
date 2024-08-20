@@ -19,6 +19,30 @@ Desenvolver um conversor de tipos de bases que suporte os tipos:
 
 
 ## Metodologia
+
+### Valores de Entrada
+
+A entrada de valores deve seguir o padrão abaixo:
+
+| Base | Sinal | Sufixo | Exemplo | Observação |
+|------|-------|--------|---------|------------|
+| Binária | Não | b | 0110b | Somente valores numéricos entre 0 e 1|
+| Decimal | Sim | d | -25d ou +25d | O uso do sinal é obrigatório, realiza também a conversão de números negativos |
+| Hexadecimal | Não | h | 109FEh | Letras devem ser maiúsculas|
+| Octal | Não | o | 107o | O dígito deve conter valores entre 0 e 7  |
+
+### Exemplos de Valores de Entrada
+
+| Sinal | Valor | Sufixo | Descrição |
+|-------|-------|--------|------------|
+| + | 25 | d | Exemplo de valor positivo decimal |
+| - | 25 | d | Exemplo de valor negativo decimal |
+| Não tem | 0110 | b | Exemplo de valor binário |
+| Não tem | 109FE | h | Exemplo de valor hexadecimal |
+| Não tem | 107 | o | Exemplo de valor octal |
+
+
+
 ### Abstração
 
 As funções do tipo **'MAIN'**, devem ser reutilizáveis por todos os outros métodos de conversão.
