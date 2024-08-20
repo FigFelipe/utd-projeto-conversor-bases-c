@@ -53,12 +53,12 @@ As funções do tipo **'MAIN'**, devem ser reutilizáveis por todos os outros m�
 
 | Tipo | Origem | Destino| Expressão | Método |
 |------|-----|----|---|----|
-| MAIN | Decimal | Binário |  = valor [ i ] % 2| 1 |
-| MAIN | Decimal | Octal |  = valor [ i ] % 8 | 1 |
-| MAIN | Decimal | Hexadecimal |  = valor [ i ] % 16 | 1 |
-| MAIN | Binário | Decimal | = valor [ i ] * 2^[ i ] | 2 |
-| MAIN | Hexadecimal | Decimal | = valor [ i ] * 16^[ i ] | 2 |
-| MAIN | Octal | Decimal | = valor [ i ] * 8^[ i ] | 2 |
+| MAIN | Decimal | Binário |  = valor [ i ] % 2| Divisão sucessiva |
+| MAIN | Decimal | Octal |  = valor [ i ] % 8 | Divisão sucessiva |
+| MAIN | Decimal | Hexadecimal |  = valor [ i ] % 16 | Divisão sucessiva |
+| MAIN | Binário | Decimal | = valor [ i ] * 2^[ i ] | Potenciação |
+| MAIN | Hexadecimal | Decimal | = valor [ i ] * 16^[ i ] | Potenciação |
+| MAIN | Octal | Decimal | = valor [ i ] * 8^[ i ] | Potenciação |
 
 Sendo definido que, a conversão é feita em 2 (duas) etapas:
 
