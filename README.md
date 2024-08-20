@@ -31,9 +31,6 @@ A entrada de valores deve seguir o padrão abaixo:
 | Hexadecimal | Não | h | 109FEh | Letras devem ser maiúsculas|
 | Octal | Não | o | 107o | O dígito deve conter valores entre 0 e 7  |
 
-Digitei um valor errado com a base errada. Vou quebrar a execução do código?
-
-> Definitivamente não. O código utiliza um validador de expressões regulares (regex), o qual aceita somente valores dentro do padrão determinado por tipo de base.
 
 ### Exemplos de Valores de Entrada
 
@@ -45,6 +42,9 @@ Digitei um valor errado com a base errada. Vou quebrar a execução do código?
 | Não tem | 109FE | h | Exemplo de valor hexadecimal |
 | Não tem | 107 | o | Exemplo de valor octal |
 
+Digitei um valor errado com a base errada. Vou quebrar a execução do código?
+
+> Definitivamente não. O código utiliza um validador de expressões regulares (regex), o qual aceita somente valores dentro do padrão determinado por tipo de base.
 
 
 ### Abstração
