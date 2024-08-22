@@ -27,7 +27,7 @@ A entrada de valores deve seguir o padrão abaixo:
 | Base | Sinal | Sufixo | Exemplo | Observação |
 |------|-------|--------|---------|------------|
 | Binária | Não | b | 0110b | Somente valores numéricos entre 0 e 1|
-| Decimal | Sim | d | -25d ou +25d | O uso do sinal é obrigatório, realiza também a conversão de números negativos |
+| Decimal | Sim | d | +25d ou -25d | O uso do sinal é obrigatório, realiza também a conversão de números negativos |
 | Hexadecimal | Não | h | 109FEh | Letras devem ser maiúsculas|
 | Octal | Não | o | 107o | O dígito deve conter valores entre 0 e 7  |
 
